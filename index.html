@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello ✋</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.12/fullpage.min.css"
+    />
+    <style>
+      body {
+        font-family: 'Helvetica', sans-serif;
+      }
+      .fp-watermark {
+        display: none;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            animation: {
+              marquee: 'marquee 25s linear infinite',
+              marquee2: 'marquee2 25s linear infinite',
+            },
+            keyframes: {
+              marquee: {
+                '0%': { transform: 'translateX(0%)' },
+                '100%': { transform: 'translateX(-100%)' },
+              },
+              marquee2: {
+                '0%': { transform: 'translateX(100%)' },
+                '100%': { transform: 'translateX(0%)' },
+              },
+            },
+          },
+        },
+      }
+    </script>
+  </head>
+  <body class="bg-[#1D272D]">
+    <div class="mx-auto max-w-screen-2xl fixed left-0 right-0 z-50">
+      <nav class="flex justify-between items-center text-white mx-10 my-4">
+        <a
+          href="#"
+          class="text-3xl font-bold cursor-pointer"
+          data-tilt
+          data-tilt-reverse="true"
+        >
+          Fitra
+          <span class="text-[#CEEF4F]">.</span>
+        </a>
+        <div class="gap-x-10 hidden font-semibold md:flex">
+          <a href="#home" class="magic-hover magic-hover__square p-1">Home</a>
+          <a href="#about" class="magic-hover magic-hover__square p-1">About</a>
+          <a href="#project" class="magic-hover magic-hover__square p-1">
+            Project
+          </a>
+        </div>
+        <div>
+          <a data-til href="https://www.instagram.com/fitra36_/">
+            <svg
+              class="w-6 text-white"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                d="M11 0H5a5 5 0 0 0-5 5v6a5 5 0 0 0 5 5h6a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zm3.5 11c0 1.93-1.57 3.5-3.5 3.5H5c-1.93 0-3.5-1.57-3.5-3.5V5c0-1.93 1.57-3.5 3.5-3.5h6c1.93 0 3.5 1.57 3.5 3.5v6z"
+              />
+              <path
+                fill="currentColor"
+                d="M8 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm0 6.5A2.503 2.503 0 0 1 5.5 8c0-1.379 1.122-2.5 2.5-2.5s2.5 1.121 2.5 2.5c0 1.378-1.122 2.5-2.5 2.5z"
+              />
+              <circle fill="currentColor" cx="12.3" cy="3.7" r=".533" />
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+    <div id="fullpage">
+      <div class="section relative" data-anchor="home">
+        <div
+          class="bg-[#CEEF4F] bg-opacity-20 duration-1000 hover:bg-opacity-40 z-[60] transition-all -left-32 blur-xl h-64 w-64 rounded-full absolute"
+        ></div>
+        <div
+          class="bg-[#CEEF4F] bg-opacity-20 duration-1000 hover:bg-opacity-40 z-[60] transition-all -right-32 blur-xl h-64 w-64 rounded-full absolute"
+        ></div>
+
+        <!-- bg -->
+        <div class="absolute inset-0">
+          <svg width="100%" height="100%">
+            <pattern
+              id="star1"
+              patternUnits="userSpaceOnUse"
+              patternContentUnits="userSpaceOnUse"
+              width="70"
+              height="70"
+              fill="#414950"
+            >
+              <circle r="3" cx="3" cy="3" />
+            </pattern>
+
+            <rect width="100%" height="100%" fill="url(#star1)" />
+          </svg>
+        </div>
+        <div class="absolute inset-0">
+          <svg width="100%" height="100%">
+            <pattern
+              id="star2"
+              patternUnits="userSpaceOnUse"
+              patternContentUnits="userSpaceOnUse"
+              width="50"
+              height="50"
+              fill="#414950"
+            >
+              <circle r="2" cx="2" cy="2" />
+            </pattern>
+
+            <rect width="100%" height="100%" fill="url(#star2)" />
+          </svg>
+        </div>
+        <!-- end bg -->
+
+        <div class="absolute z-30 lg:left-11 lg:top-44 inset-0 flex justify-center items-center lg:block text-center lg:text-left">
+          <div class="text-white font-bold text-lg lg:text-6xl cursor-pointer">
+            <span>IKI NIATE KANGGO</span>
+            <br />
+            <span class="text-[#CBED4D]">WEB PORTFOLIO GUYS</span>
+            <br />
+            <span>TAPI SABAR SEK</span>
+          </div>
+        </div>
+
+        <div
+          class="absolute bottom-0 left-0 right-0 shadow-2xl shadow-[#CBED4D]"
+        >
+          <div
+            class="relative flex items-center overflow-x-hidden bg-[#1B252B] text-[#CBED4D] text-lg lg:text-4xl"
+          >
+            <div class="py-5 lg:py-10 animate-marquee whitespace-nowrap">
+              <span class="mx-4 font-bold">
+                Frontend Web Developement
+              </span>
+              <span class="text-white">&#x2022;</span>
+              <span class="mx-4 font-bold">Mobile React Native</span>
+              <span class="text-white">&#x2022;</span>
+              <span class="mx-4 font-bold">Desktop .Net</span>
+              <span class="text-white">&#x2022;</span>
+              <span class="mx-4 font-bold">Backend Development</span>
+            </div>
+
+            <div
+              class="absolute top-0 py-5 lg:py-10 animate-marquee2 whitespace-nowrap"
+            >
+              <span class="mx-4 font-bold">
+                Frontend Web Developement
+              </span>
+              <span class="text-white">&#x2022;</span>
+              <span class="mx-4 font-bold">Mobile React Native</span>
+              <span class="text-white">&#x2022;</span>
+              <span class="mx-4 font-bold">Desktop .Net</span>
+              <span class="text-white">&#x2022;</span>
+              <span class="mx-4 font-bold">Backend Development</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section relative" data-anchor="about">
+        <div
+          class="flex justify-center font-bold inset-0 absolute items-center lg:text-6xl text-white"
+        >
+          <div class="text-center">
+            SEK DURUNG YA GES
+            <br />
+            <span class="text-[#CBED4D]">BINGUNG APE DI ISI OPO</span>
+          </div>
+        </div>
+
+        <!-- bg -->
+        <div class="absolute inset-0">
+          <svg width="100%" height="100%">
+            <pattern
+              id="star1"
+              patternUnits="userSpaceOnUse"
+              patternContentUnits="userSpaceOnUse"
+              width="70"
+              height="70"
+              fill="#414950"
+            >
+              <circle r="3" cx="3" cy="3" />
+            </pattern>
+
+            <rect width="100%" height="100%" fill="url(#star1)" />
+          </svg>
+        </div>
+        <div class="absolute inset-0">
+          <svg width="100%" height="100%">
+            <pattern
+              id="star2"
+              patternUnits="userSpaceOnUse"
+              patternContentUnits="userSpaceOnUse"
+              width="50"
+              height="50"
+              fill="#414950"
+            >
+              <circle r="2" cx="2" cy="2" />
+            </pattern>
+
+            <rect width="100%" height="100%" fill="url(#star2)" />
+          </svg>
+        </div>
+        <!-- end bg -->
+      </div>
+      <div class="section" data-anchor="project">
+        <div
+          class="flex justify-center font-bold inset-0 absolute items-center lg:text-6xl text-white"
+        >
+          <div class="text-center">
+            PODO IKI YO DURUNG
+            <br />
+            <span class="text-[#CBED4D]">BINGUNG APE DI ISI OPO</span>
+          </div>
+        </div>
+        <!-- bg -->
+        <div class="absolute inset-0">
+          <svg width="100%" height="100%">
+            <pattern
+              id="star1"
+              patternUnits="userSpaceOnUse"
+              patternContentUnits="userSpaceOnUse"
+              width="70"
+              height="70"
+              fill="#414950"
+            >
+              <circle r="3" cx="3" cy="3" />
+            </pattern>
+
+            <rect width="100%" height="100%" fill="url(#star1)" />
+          </svg>
+        </div>
+        <div class="absolute inset-0">
+          <svg width="100%" height="100%">
+            <pattern
+              id="star2"
+              patternUnits="userSpaceOnUse"
+              patternContentUnits="userSpaceOnUse"
+              width="50"
+              height="50"
+              fill="#414950"
+            >
+              <circle r="2" cx="2" cy="2" />
+            </pattern>
+
+            <rect width="100%" height="100%" fill="url(#star2)" />
+          </svg>
+        </div>
+        <!-- end bg -->
+      </div>
+    </div>
+    <script src="./assets/js/fullpage.min.js"></script>
+    <script src="./assets/js/tilt.js"></script>
+    <script src="./assets/js/magic_mouse.js"></script>
+    <script>
+      new fullpage('#fullpage', {
+        //options here
+        autoScrolling: true,
+        scrollHorizontally: true,
+        parallax: true,
+        slidesNavigation: true,
+      })
+      magicMouse()
+    </script>
+  </body>
+</html>
